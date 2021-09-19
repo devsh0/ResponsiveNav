@@ -46,8 +46,6 @@ nav li {
     }
 
     .mobile-hamburger .bar {
-        animation-name: ham-animate;
-        animation-duration: 200ms;
         margin: 2px 0;
         width: 20px;
         border: 1px solid #fcfbfb;
@@ -69,11 +67,9 @@ nav li {
     #dummy:checked ~ .b1 {
         transform: translate(0px, 6px) rotate(45deg);
     }
-
     #dummy:checked ~ .b2 {
         opacity: 0;
     }
-
     #dummy:checked ~ .b3 {
         transform: translate(0px, -6px) rotate(-45deg);
 
