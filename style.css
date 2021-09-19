@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid magenta;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-left: 10px;
+}
+
+@media (max-width: 675px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+
+
