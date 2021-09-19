@@ -36,7 +36,7 @@ header h1 {
     }
 
     .navigation a {
-        color: inherit;
+        color: #505050;
         text-decoration: none;
     }
 
@@ -57,7 +57,7 @@ header h1 {
         position: fixed;
         top: 0;
         right: 0;
-        width: 70%;
+        width: 60%;
         background: #fcfbfb;
         height: 100vh;
         transition: transform 0.3s;
