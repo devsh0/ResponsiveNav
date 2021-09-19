@@ -1,6 +1,8 @@
 body {
-    background: #151723;
+    background: #252525;
     color: #fcfbfb;
+    margin: 0;
+    padding: 5px 5px;
 }
 
 header {
@@ -12,37 +14,85 @@ header h1 {
     margin: 0;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-left: 10px;
-}
-
-.mobile-hamburger {
-    display: none;
-}
-
-@media (max-width: 675px) {
-    nav {
-        display: none;
-    }
-
-    .mobile-hamburger {
+@media (min-width: 675px) {
+    .navigation {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation li {
+        margin-left: 10px;
+    }
+
+    .navigation a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .mobile-navigation {
+        display: none;
+    }
+}
+
+@media (max-width: 675px) {
+    .navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 50%;
+        background: #333;
+        height: 100vh;
+    }
+
+    .mobile-hamburger {
+        position: fixed;
+        right: 0;
+        margin: 10px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mobile-navigation ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0;
+        padding: 0;
+    }
+
+    .mobile-navigation li {
+        height: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mobile-navigation li:focus {
+        background: #484848;
+    }
+
+    .mobile-navigation li.active {
+        background: #484848;
+    }
+
+    .mobile-navigation a {
+        color: inherit;
+        text-decoration: none;
+        padding: 0 20px;
     }
 
     .mobile-hamburger .bar {
@@ -72,6 +122,5 @@ nav li {
     }
     #dummy:checked ~ .b3 {
         transform: translate(0px, -6px) rotate(-45deg);
-
     }
 }
