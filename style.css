@@ -1,3 +1,7 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
     color: #fcfbfb;
     margin: 0;
@@ -45,6 +49,7 @@ header h1 {
         text-decoration: underline;
 
     }
+
     .navigation a:focus {
         font-weight: 900;
         text-decoration: underline;
@@ -116,6 +121,10 @@ header h1 {
         padding: 0 20px;
     }
 
+    .mobile-navigation a i {
+        margin-right: 10px !important;
+    }
+
     .mobile-hamburger .bar {
         margin: 2px 0;
         width: 20px;
@@ -133,6 +142,7 @@ header h1 {
         height: 20px;
         opacity: 0;
         z-index: 3;
+        cursor: pointer;
     }
 
     #dummy:checked ~ .b1 {
