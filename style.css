@@ -32,7 +32,8 @@ header h1 {
     }
 
     .navigation li {
-        margin-left: 10px;
+        width: 60px;
+        text-align: center;
     }
 
     .navigation a {
@@ -40,9 +41,19 @@ header h1 {
         text-decoration: none;
     }
 
+    .navigation a:hover {
+        text-decoration: underline;
+
+    }
+    .navigation a:focus {
+        font-weight: 900;
+        text-decoration: underline;
+    }
+
     .mobile-hamburger {
         display: none;
     }
+
     .mobile-navigation {
         display: none;
     }
@@ -127,9 +138,11 @@ header h1 {
     #dummy:checked ~ .b1 {
         transform: translate(0px, 6px) rotate(45deg);
     }
+
     #dummy:checked ~ .b2 {
         opacity: 0;
     }
+
     #dummy:checked ~ .b3 {
         transform: translate(0px, -6px) rotate(-45deg);
     }
